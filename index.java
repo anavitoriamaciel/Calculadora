@@ -1,4 +1,5 @@
 package CalculadoraInt;
+
 import java.util.Scanner;
 
 public class index {
@@ -24,17 +25,18 @@ public class index {
             }
 
             int num1, num2;
+            // Leitura do primeiro número inteiro
             System.out.print("Digite um número inteiro: ");
-            while (!entrada.hasNextInt()) {
+            while (!entrada.hasNextInt()) {  // Validação para garantir que o valor inserido é um inteiro
                 System.out.println("Erro: entrada inválida. Por favor, digite um número inteiro.");
                 entrada.next(); // descartar a entrada inválida
                 System.out.print("Digite um número inteiro: ");
             }
-            num1 = entrada.nextInt();
+            num1 = entrada.nextInt(); // Atribui o valor válido à variável num1
             entrada.nextLine();
 
-            System.out.print("Digite o segundo número inteiro: ");
-            while (!entrada.hasNextInt()) {
+            System.out.print("Digite o segundo número inteiro: "); // Leitura do segundo número inteiro
+            while (!entrada.hasNextInt()) { // Validação para garantir que o valor inserido é um inteiro
                 System.out.println("Erro: entrada inválida. Por favor, digite um número inteiro.");
                 entrada.next(); // descartar a entrada inválida
                 System.out.print("Digite o segundo número inteiro: ");
@@ -56,7 +58,7 @@ public class index {
                     if (num1 == 0 || num2 == 0) {
                         System.out.println("ERRO!");
                     } else {
-                        System.out.println(num1 + " ÷ " + num2 + " = " + ((double)num1 / (double)num2));
+                        System.out.println(num1 + " ÷ " + num2 + " = " + ((double) num1 / (double) num2));
                     }
                     break;
                 case 5:
